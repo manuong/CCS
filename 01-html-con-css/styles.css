@@ -1,0 +1,12 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta {
+  color: white;
+  width: 30em;
+  margin: 2em;
+  border: 2px solid rgb(22, 221, 22);
+  border-radius: 8px;
+}
