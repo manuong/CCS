@@ -1,0 +1,135 @@
+/* 
+Los selectores en CSS son patrones utilizados para seleccionar y aplicar estilos
+ a elementos específicos del documento HTML.
+*/
+
+/* 
+* Selector de tipo o de elemento
+
+ejemplo: seleccionamos las etiquetas "body" y "h1" para darles estilos
+*/
+
+body {
+  color: white;
+  background-color: #202020;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 2em;
+}
+
+/*
+* Selector por ID
+*/
+
+#parrafo-principal {
+  font-size: medium;
+  width: 70%;
+}
+
+/* 
+* Selector de clase
+
+este selector es el mas usado porque es la mejor manera de dar estilos en un HTML
+*/
+
+.seccion1 {
+  background-color: darkorchid;
+  margin: 2em;
+  padding: 10px;
+}
+
+.seccion2 {
+  background-color: darkslateblue;
+  margin: 2em;
+  padding: 10px;
+}
+
+.seccion3 {
+  background-color: darkblue;
+  margin: 2em;
+  padding: 10px;
+}
+
+.seccion4 {
+  background-color: darkcyan;
+  margin: 2em;
+  padding: 10px;
+}
+
+.fuente-distinta {
+  font-family: monospace;
+}
+
+.fuente-distinta-t {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* 
+* Selectores combinados
+
+
+selector de clase múltiple
+
+de esta manera podemos dar estilos cuando la etiqueta "h2" tenga la clase "seccion1" o tambien
+cuando la etiqueta tenga la clase ".seccion2" y ".fuente-distinta"
+*/
+
+h2.seccion1 {
+  font-size: 28px;
+}
+
+h2.seccion2 {
+  font-size: 32px;
+}
+
+.seccion2.fuente-distinta {
+  color: black;
+}
+
+/* 
+selectores descendientes:
+
+de esta manera podemos dar estilos a etiquetas que son descendientes, por ejemplo, a las etiquetas "p"
+que desciendan de la etiqueta con la clase ".seccion3"
+*/
+
+.seccion3 p {
+  color: gray;
+}
+
+/* 
+selector de grupo:
+
+de esta manera podemos aplicar el mismo estilo a múltiples selectores al mismo tiempo, por ejemplo cualquier 
+elemento HTML que tenga la clase "seccion4" o la clase "fuente-distinta" tendrá el color del texto negro
+*/
+
+.seccion4,
+.fuente-distinta-t {
+  color: black;
+}
+
+/* 
+
+Selector de hijo: Selecciona elementos que son hijos directos de un elemento específico.
+
+div > p {
+  color: red;
+}
+
+Selector de hermano adyacente: Selecciona un elemento que es el siguiente hermano inmediato de un elemento específico.
+
+h1 + p {
+  color: green;
+}
+
+Selector de hermanos generales: Selecciona todos los hermanos posteriores de un elemento específico.
+
+h1 ~ p {
+  color: orange;
+}
+
+*/

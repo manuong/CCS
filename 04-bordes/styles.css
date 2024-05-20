@@ -1,0 +1,79 @@
+body {
+  background-color: #202020;
+  padding: 2em;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+  text-align: center;
+}
+
+p {
+  padding: 2em;
+}
+
+.contenedor {
+  margin: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dotted {
+  border-style: dotted;
+}
+
+.dashed {
+  border-style: dashed;
+}
+
+.solid {
+  border-style: solid;
+}
+
+.double {
+  border-style: double;
+}
+
+.groove {
+  border-style: groove;
+}
+
+.ridge {
+  border-style: ridge;
+}
+
+.inset {
+  border-style: inset;
+}
+
+.outset {
+  border-style: outset;
+}
+
+.none {
+  border-style: none;
+}
+
+.hidden {
+  border-style: hidden;
+}
+
+.mix {
+  border-style: solid dotted groove;
+}
+
+/* 
+
+la notación abreviada (shorthand)
+
+Propiedades individuales 
+border-width: 1px;
+border-style: solid;
+border-color: #000;
+
+ Notación abreviada 
+border: 1px solid #000;
+
+*/

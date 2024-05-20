@@ -1,0 +1,77 @@
+body {
+  background-color: #202020;
+  color: white;
+  padding: 2em;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.titulos {
+  font-size: 28px;
+  text-align: center;
+}
+
+.contenedores {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 
+
+Hay varias formas de indicarle al navegador que pinte un color, una es por medio del nombre, por ejemplo
+
+red, blue, yellow, etc
+
+también lo podemos indicar por código hexadecimal
+
+#202020
+#507255
+#643173
+#E8871E
+
+y por ultimo por RGB (combinaciones entre rojo, verde y azul) y alfa que es la transparencia
+
+*/
+
+.titulo-1 {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* 
+colores HSL
+*/
+
+.titulo-2 {
+  color: hsl(hue, saturation, lightness);
+}
+
+/* 
+
+* Gradientes en CSS
+
+lo podemos lograr utilizando background: linear-gradient(90deg, blue 0%, cyan 50%, pink 100%);
+
+el primer atibuto se refiere a la inclinacion de la linea que se va ir degradando, despues
+estan los colores junto con el punto donde se va centrar
+*/
+
+.gradiente-1 {
+  background: linear-gradient(90deg, green 0%, darkgreen 50%, yellow 100%);
+  width: 18em;
+  height: 6em;
+  text-align: center;
+  padding: 2em;
+}
+
+.gradiente-2 {
+  background: linear-gradient(90deg, blue 0%, cyan 50%, pink 100%);
+  width: 18em;
+  height: 6em;
+  text-align: center;
+  padding: 2em;
+}
