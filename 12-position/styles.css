@@ -1,0 +1,121 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  padding: 0 10px;
+  height: 2000px;
+}
+
+h1 {
+  font-size: 47px;
+  margin: 80px 0 50px 50px;
+}
+
+.contenedor-1 {
+  position: relative;
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+}
+
+.contenedor-2 {
+  display: flex;
+  justify-content: end;
+}
+
+.estilo-ejemplo-1 {
+  background-color: darkcyan;
+  font-size: 32px;
+  width: 200px;
+  height: 60px;
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.estilo-ejemplo-2 {
+  position: absolute;
+  border: 2px dotted darkcyan;
+  font-size: 32px;
+  width: 200px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.estilo-caja {
+  background-color: darkcyan;
+  width: 200px;
+  height: 160px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* 
+
+/
+/
+/
+
+Formas de utilizar pasition en CSS
+
+*/
+
+/* Esta por default, el elemento no se mueve */
+.position-static {
+  position: static;
+}
+
+/* position relative, permite mover al elemento en relacion a su posicion actual */
+.position-relative {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+/* position fixed, permite mover al elemento y ademas se queda fijado */
+.position-fixed {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* position sticky, El elemento se queda estatico hasta que el scrol llegue al margen establecido */
+.position-sticky {
+  position: sticky;
+  top: 20px;
+}
+
+/* position absolute, permite mover al elemento hacia cualquier direccion y ademas se superpone */
+.position-absolute {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* 
+
+combinacion entre position relative y absolute
+
+si le agregamos la propiedad "position relative" al elemento padre, y al hijo con la "propiedad absolute"
+este se movera con referencia al tamaño del padre
+
+*/
+
+/* 
+
+z-index
+
+esta propiedad basicamente permite mover a los elementos en profundidad es decir en el eje z
+
+.detras {
+  position: absolute;
+  z-index: -1;
+}
+
+.adelante {
+  position: relative;
+  z-index: 1;
+}
+
+*/

@@ -1,0 +1,53 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 47px;
+  margin: 80px 30px;
+}
+
+/* 
+
+Elemento en Bloque que se comparta en Linea
+
+*/
+
+div {
+  background-color: darkslategray;
+  font-size: 32px;
+  width: 50px; /* evita que width y height tengan efecto */
+  height: 50px;
+  text-align: center;
+  display: inline; /* se comporta como elemento en linea */
+}
+
+span {
+  background-color: darkorchid;
+  font-size: 32px;
+  width: 50px; /* width y height tienen efecto */
+  height: 50px;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  display: block; /* se comporta como elemento en bloque */
+}
+
+/* 
+
+Diferencia entre usar display-none y visibility: hidden
+
+*/
+
+/* El elemento desaparece por completo */
+.display-none {
+  display: none;
+}
+
+/* El elemento no se ve pero sigue manteniendo el espacio que ocupa */
+.visibility-hidden {
+  visibility: hidden;
+}
