@@ -1,0 +1,128 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+  margin: 30px;
+}
+
+h2 {
+  font-size: 27px;
+  margin: 20px;
+}
+
+/* 
+
+alineacion de texto
+
+*/
+
+.centro {
+  width: 70vw;
+  text-align: center;
+}
+
+.derecha {
+  width: 70vw;
+  text-align: right;
+}
+
+.justificado {
+  width: 70vw;
+  text-align: justify;
+}
+
+/* 
+
+Decoracion de texto
+
+*/
+
+.overline {
+  text-decoration: overline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* 
+
+shorthand de text-decoration
+
+.underline-s{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+
+text-decoration <tipo de linea> <estilo> <color> <gruesor>
+*/
+
+.underline-s {
+  text-decoration: underline wavy red 2px;
+}
+
+/* 
+
+Trasformar texto
+
+*/
+
+/* todas las letras minusculas */
+.transformar-minusculas {
+  text-transform: lowercase;
+}
+
+/* todas las letas a MAYUSCULAS */
+.transformar-mayusculas {
+  text-transform: uppercase;
+}
+
+/* primera mayuscula */
+.transformar-primera-mayuscula {
+  text-transform: capitalize;
+}
+
+/* define una sagria al texto */
+.transformar-sangria {
+  text-indent: 50px;
+}
+
+/* define espaciado entre las letras */
+.transformar-espaciado-letra {
+  letter-spacing: 5px;
+}
+
+/* define espaciado entre las palabras */
+.transformar-espaciado-palabra {
+  word-spacing: 10px;
+}
+
+/* define espaciado entre lineas */
+.transformar-espaciado-linea {
+  line-height: 2;
+}
+
+/* no respeta es tamaño del elemento padre */
+.transformar-no-atrapado {
+  white-space: nowrap;
+}
+
+/* 
+
+Textos sombreados
+
+*/
+
+/* shorthand de text-shadow: <horizontal> <vertical> <desenfoque> <color>, <se pueden ir agregando mas>  */
+.texto-sombra {
+  text-shadow: 2px 2px 5px green;
+}
