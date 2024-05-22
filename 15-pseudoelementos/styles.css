@@ -1,0 +1,64 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 47px;
+  margin: 80px 30px;
+}
+
+.contenedor-de-contenido {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.contenedor-de-contenido-2 {
+  margin-top: 30px;
+  width: 350px;
+  padding: 2px;
+}
+
+/* 
+
+Pseudoelementos en CSS
+
+son palabras clave que se añaden a selectores para especificar una parte
+del elemento seleccionado. Permiten aplicar estilos a partes específicas de un documento que no
+pueden ser seleccionadas mediante selectores simples.
+
+*/
+
+.prefijo::before {
+  content: '●  ';
+}
+
+.sufijo::after {
+  content: ' ©';
+}
+
+/* ::first-letter Aplica estilos a la primera letra de un bloque de texto. */
+.primera-letra::first-letter {
+  font-size: 38px;
+  color: darkcyan;
+}
+
+/* ::first-line Aplica estilos a la primera línea de un bloque de texto.*/
+.primera-linea::first-line {
+  font-weight: bold;
+  color: darkcyan;
+}
+
+/* ::selection Aplica estilos al texto seleccionado por el usuario. */
+::selection {
+  background-color: darkcyan;
+  color: black;
+}
+
+/* ::marker Aplica estilos a los marcadores de listas. */
+::marker {
+  font-size: 32px;
+  color: darkcyan;
+}

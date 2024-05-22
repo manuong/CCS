@@ -1,0 +1,157 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 47px;
+  margin: 80px 30px;
+}
+
+a {
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+}
+
+.parrafo-oculto {
+  display: none;
+}
+
+/* 
+
+Psudoclases en CSS
+
+Las pseudoclases en CSS son palabras clave que se añaden
+a los selectores y permiten aplicar estilos a un elemento en un estado específico. Por ejemplo cuando
+hacemos click en un link, cuando un input es valido o no, cuando pasamos por encima la flecha del ratón,
+y muchos mas
+
+mujoran mucho la experiencia del usuario.
+
+
+
+
+*/
+
+/* 
+
+
+Pseudoclases de enlaces 
+
+*/
+
+/* :link: Aplica estilo a un enlace que no ha sido visitado */
+a:link {
+  color: darkolivegreen;
+}
+
+/* :visited: Aplica estilo a un enlace que ha sido visitado */
+a:visited {
+  color: darkcyan;
+}
+
+/*
+
+
+Pseudoclases dinámicas 
+
+*/
+
+/* :hover: Aplica estilo cuando el puntero del ratón se encuentra sobre un elemento. */
+.pc-hover:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.pc-hover:hover p {
+  color: white;
+  display: block;
+  background-color: darkcyan;
+  width: 400px;
+  padding: 30px;
+}
+
+/* :active: Aplica estilo a un elemento en el momento en que se activa (por ejemplo, al hacer clic). */
+.pc-active:active {
+  cursor: pointer;
+  color: grey;
+}
+
+/* :focus: Aplica estilo a un elemento que ha recibido el foco, como cuando un usuario hace clic en un campo de formulario. */
+.pc-focus:focus {
+  color: white;
+  background-color: darkcyan;
+}
+
+/* 
+
+
+
+Pseudoclases estructurales
+
+*/
+
+/* :first-child: Aplica estilo al primer hijo de su elemento padre */
+p:first-child {
+  background-color: darkcyan;
+  font-weight: bold;
+}
+
+/* :last-child: Aplica estilo al último hijo de su elemento padre */
+p:last-child {
+  background-color: darkblue;
+  font-weight: bold;
+}
+
+/* 
+
+
+mas pseudoclases estructurales
+
+:only-child: Aplica estilo a un elemento que es el único hijo de su elemento padre.
+
+p:only-child {
+  color: purple;
+}
+
+
+:nth-child(n): Aplica estilo al enésimo hijo, pares o impares de su elemento padre
+
+p:nth-child(2) {
+  color: orange;
+}
+
+p:nth-child(even) { <--- pares
+  color: grey;
+}
+
+p:nth-child(odd) { <--- impares
+  color: grey;
+}
+
+
+
+:nth-last-child(n): Aplica estilo al enésimo hijo, contando desde el final
+
+p:nth-last-child(1) {
+  color: grey;
+}
+
+
+
+:nth-of-type(n): Aplica estilo al enésimo hijo del mismo tipo (tag) de su elemento padre
+
+p:nth-of-type(3) {
+  color: pink;
+}
+
+
+*/

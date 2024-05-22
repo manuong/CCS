@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Pseudoclases en CSS</title>
+  </head>
+  <body>
+    <h1>Pseudoclases en CSS</h1>
+
+    <p>
+      Las pseudoclases en CSS son palabras clave que se añaden a los selectores y permiten aplicar
+      estilos a un elemento en un estado específico. Por ejemplo cuando hacemos click en un link, cuando
+      un input es valido o no, cuando pasamos por encima la flecha del ratón, y muchos mas
+    </p>
+
+    <br />
+
+    <h2>- Pseudoclases de Enlaces</h2>
+
+    <a href="https://github.com/manuong" target="_blank">github</a>
+    <br />
+    <br />
+    <a href="https://www.linkedin.com/in/manuong" target="_blank">linkedin</a>
+
+    <br /><br /><br />
+
+    <h2>- Pseudoclases Dinámicas</h2>
+
+    <div class="pc-hover">
+      Soy un parrafo con "hover"
+      <p class="parrafo-oculto">Soy un parrafo que se produce por efecto del "hover"</p>
+    </div>
+
+    <p class="pc-active">Soy un parrafo con "active"</p>
+    <br /><br />
+    <label for="texto">Input con pseudoclase 'focus' </label>
+    <input class="pc-focus" type="text" name="texto" />
+
+    <br /><br /><br />
+
+    <h2>- Pseudoclases Estructurales</h2>
+
+    <h3>first-child y last-child</h3>
+    <p>
+      Aplica estilo al primer o ultimo hijo de su elemento padre respectivamente, en este ejemplo el
+      primer y ultimo "p" que sea hijo de un elemento
+    </p>
+    <div>
+      <p>soy el primer hijo del elemento padre</p>
+      <p>soy el segundo hijo del elemento padre</p>
+      <p>soy el ultimo hijo del elemento padre</p>
+    </div>
+    <div>
+      <p>soy el primer hijo de otro elemento padre</p>
+      <p>soy el segundo hijo de otro elemento padre</p>
+      <p>soy el ultimo hijo de otro elemento padre</p>
+    </div>
+
+    <h3></h3>
+    <br />
+  </body>
+</html>
