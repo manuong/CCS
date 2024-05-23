@@ -1,0 +1,48 @@
+html {
+  padding: 0;
+}
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* 
+
+
+Dandole estilos a una barra de navegacion con css
+
+*/
+
+ul {
+  margin: 0;
+  list-style-type: none; /* quita los marcadores de la lista */
+  background-color: #111111;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+  margin: 30px;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid #111111;
+  padding: 10px;
+}
+
+/* para diferenciar la ruta donde estamos actualmente */
+.active {
+  color: darkcyan;
+}
+
+/* pseudoclase :not() */
+/* aplicamos un hover a toda las "a"ecepto a la que tiene la clase ".active" */
+li a:hover:not(.active) {
+  color: darkcyan;
+  border-color: darkcyan;
+  border-radius: 10px;
+}

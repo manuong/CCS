@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Pseudoelementos en CSS</title>
+  </head>
+  <body>
+    <h1>Pseudoelementos en CSS</h1>
+
+    <p>
+      Los pseudoelementos en CSS son palabras clave que se añaden a selectores para especificar una parte
+      del elemento seleccionado. Permiten aplicar estilos a partes específicas de un documento que no
+      pueden ser seleccionadas mediante selectores simples.
+    </p>
+
+    <div class="contenedor-de-contenido">
+      <h2>::before y ::after</h2>
+      <p class="prefijo">::before: Inserta contenido antes del contenido de un elemento.</p>
+      <p class="sufijo">::after: Inserta contenido después del contenido de un elemento.</p>
+    </div>
+
+    <br />
+
+    <h2>::first-letter</h2>
+    <p class="primera-letra">Aplica estilos a la primera letra de un bloque de texto.</p>
+
+    <br />
+
+    <h2>::first-line</h2>
+    <p>Aplica estilos a la primera línea de un bloque de texto</p>
+
+    <div class="contenedor-de-contenido-2">
+      <p class="primera-linea">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus corrupti quos ad explicabo
+        molestiae exercitationem saepe numquam cupiditate mollitia temporibus ratione, nobis enim odit
+        culpa minima itaque inventore praesentium est?
+      </p>
+    </div>
+    <br />
+
+    <h2>::selection</h2>
+    <p>Aplica estilos al texto seleccionado por el usuario.</p>
+
+    <br />
+
+    <h2>::marker</h2>
+    <p>Aplica estilos a los marcadores de listas.</p>
+
+    <ul>
+      <li>Item uno</li>
+      <li>Item dos</li>
+      <li>Item tres</li>
+    </ul>
+  </body>
+</html>
