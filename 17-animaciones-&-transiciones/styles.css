@@ -1,0 +1,152 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 47px;
+  margin: 80px 30px;
+}
+
+.contenedor-1 {
+  display: grid;
+  place-items: center;
+}
+
+.contenedor-2 {
+  position: relative;
+  margin-top: 30px;
+  height: 500px;
+}
+
+.caja-1 {
+  background-color: darkcyan;
+  text-align: center;
+  margin-top: 2em;
+  width: 200px;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* 
+
+
+
+Animaciones y Transiciones en CSS 
+
+Las animaciones en CSS permiten añadir movimiento y dinamismo a los elementos de una página web.
+Existen dos principales métodos para crear animaciones en CSS: transiciones y animaciones con @keyframes.
+
+*/
+
+/* 
+
+
+Transiciones
+
+Las transiciones permiten cambiar gradualmente los valores de una propiedad CSS
+durante un periodo de tiempo específico.
+
+*/
+
+.transicion-1 {
+  transition: background-color 1s, transform 1s;
+}
+
+.transicion-2 {
+  transition: opacity 0.5s ease-in-out 0.3s, width 0.5s linear, height 0.5s linear;
+}
+
+.caja-1.transicion-1:hover {
+  background-color: darkblue;
+  transform: rotate(360deg);
+}
+
+.caja-1.transicion-2:hover {
+  opacity: 0;
+  width: 250px;
+  height: 250px;
+}
+
+/* 
+
+
+
+Animaciones
+
+Las animaciones con @keyframes permiten definir una secuencia de estilos CSS
+a lo largo de varios puntos del tiempo.
+
+*/
+
+@keyframes cuadrado {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-color: darkblue;
+    top: 0;
+    left: 500px;
+  }
+  50% {
+    background-color: darkslateblue;
+    top: 300px;
+    left: 500px;
+  }
+  75% {
+    background-color: darkorchid;
+    top: 300px;
+    left: 0px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.animacion-1 {
+  animation-name: cuadrado; /* nombre que le pusimos a la animacion */
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; /* que valla y venga */
+  animation-iteration-count: infinite; /* que se repita infinitamente */
+  animation-direction: alternate;
+  animation-delay: 1s; /* se demore en comensar 1s */
+}
+
+/* 
+
+
+Propiedades clave de las animaciones:
+
+
+animation-name: Nombre de la animación (definido por @keyframes).
+
+animation-duration: Duración de la animación (ej. 4s para 4 segundos).
+
+animation-timing-function: Función de tiempo (ej. ease, linear, ease-in, ease-out).
+
+animation-delay: Retraso antes de que la animación comience.
+
+animation-iteration-count: Número de veces que la animación se repetirá (ej. infinite para infinitas repeticiones).
+
+animation-direction: Dirección de la animación (ej. normal, reverse, alternate).
+
+
+Recursos adicionales
+
+Para aprender más sobre animaciones en CSS, puedes consultar la documentación oficial de MDN Web Docs:
+
+Transiciones CSS ---- https://developer.mozilla.org/es/docs/Web/CSS/transition
+
+Animaciones CSS ---- https://developer.mozilla.org/es/docs/Web/CSS/animation
+*/
