@@ -1,0 +1,81 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 47px;
+  margin: 80px 30px;
+}
+
+/* 
+
+
+Responsive en CSS
+
+se refiere al diseño web adaptable que permite que una página web se ajuste y se vea bien
+en diferentes tamaños de pantalla y dispositivos, como teléfonos móviles, tabletas
+y computadoras de escritorio. La idea es proporcionar una experiencia de usuario óptima,
+sin importar el dispositivo que se esté utilizando para acceder al sitio.
+
+es crucial utilizar técnicas y herramientas que permitan que tu diseño web se adapte a diferentes
+tamaños de pantalla y dispositivos.
+
+*/
+
+/* 
+
+
+Media Queries
+
+Las media queries son una característica fundamental del diseño web adaptable (responsive design)
+que permiten aplicar diferentes estilos CSS según las características del dispositivo, como su ancho,
+altura, resolución, etc. Las dos formas más comunes de media queries relacionadas con el ancho
+son min-width y max-width
+
+*/
+
+/*
+
+Min-width
+
+La media query min-width aplica los estilos definidos si el ancho de la ventana gráfica (viewport)
+es igual o mayor al valor especificado.
+
+Ideal para un enfoque "mobile first", comenzando con estilos para dispositivos pequeños y agregando
+estilos para tamaños más grandes.
+
+
+
+Max-width
+
+La media query max-width aplica los estilos definidos si el ancho de la ventana gráfica (viewport)
+es igual o menor al valor especificado.
+
+Ideal para un enfoque "desktop first", comenzando con estilos para dispositivos grandes y ajustando
+para tamaños más pequeños.
+
+*/
+
+/* Estilos para tabletas y dispositivos de mayor tamaño */
+/* @media (max-width: 1024px) */
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  h1 {
+    margin: 50px 0;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
