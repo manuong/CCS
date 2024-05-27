@@ -1,0 +1,194 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 47px;
+  margin: 80px 30px;
+}
+
+/* 
+
+
+
+Flexbox, o Modelo de Caja Flexible
+
+es un modelo de diseño CSS diseñado para proporcionar una forma más eficiente de distribuir
+el espacio y alinear elementos dentro de un contenedor, incluso cuando el tamaño de los elementos
+es desconocido o dinámico.
+
+Para empezar a usar Flexbox, debes aplicar la propiedad "display: flex;" a un elemento contenedor. 
+Este contenedor se convierte en un contenedor flexible y sus hijos directos se convierten 
+en elementos flexibles.
+
+.contenedor {
+  display: flex;
+}
+
+*/
+
+/* 
+
+flex-direction:
+
+Define la dirección en la que los elementos flexibles se colocan dentro del contenedor flexible.
+
+.contenedor {
+  flex-direction: row; ---> predeterminado 
+}
+
+*/
+
+.flex-row-reverse {
+  background-color: #111111;
+  display: flex;
+  flex-direction: row-reverse; /* Otros valores: column, column-reverse */
+}
+
+.flex-row-reverse > div {
+  background-color: darkcyan;
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
+/* 
+
+flex-wrap:
+
+Controla si el contenedor flexible es de una sola línea o de varias líneas, y la dirección del eje transversal.
+
+.contenedor {
+  flex-wrap: nowrap; ---> predeterminado 
+}
+
+flex-flow: 
+
+Una abreviatura para flex-direction y flex-wrap.
+
+.contenedor {
+  flex-flow: row-reverse wrap
+}
+
+*/
+
+.flex-wrap {
+  background-color: #111111;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-wrap > div {
+  background-color: darkcyan;
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
+/* 
+
+justify-content: 
+
+Alinea los elementos flexibles a lo largo del eje principal.
+
+.contenedor {
+  justify-content: flex-start; ---> predeterminado 
+
+}
+
+*/
+
+.flex-space-around {
+  background-color: #111111;
+  display: flex;
+  justify-content: space-around; /* Otros valores: flex-end, center, space-between, space-around, space-evenly */
+}
+
+.flex-space-around > div {
+  background-color: darkcyan;
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
+/* 
+
+align-items: 
+
+Alinea los elementos flexibles a lo largo del eje transversal.
+
+.contenedor {
+  align-items: stretch; ---> predeterminado 
+}
+
+*/
+
+.flex-items-end {
+  background-color: #111111;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Otros valores: flex-start, flex-end, center, baseline */
+}
+
+.distinto {
+  background-color: darkcyan;
+  font-size: 36px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+}
+
+.flex-items-end > div:not(.distinto) {
+  background-color: darkcyan;
+  font-size: 36px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
+/* 
+
+align-content: 
+
+Alinea los elementos flexibles por el contenido dentro de los elementos
+
+.contenedor {
+  align-content: stretch; ---> predeterminado 
+  
+}
+
+*/
+
+.flex-content-center {
+  background-color: #111111;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center; /* Otros valores: flex-start, flex-end, space-between, space-around */
+}
+
+.flex-content-center > div:not(.distinto) {
+  background-color: darkcyan;
+  font-size: 36px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}

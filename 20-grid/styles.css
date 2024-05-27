@@ -1,0 +1,176 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 47px;
+  margin: 80px 30px;
+}
+
+/* 
+
+
+
+CSS Grid
+
+es un sistema de diseño de CSS que permite crear layouts complejos 
+y responsivos de manera sencilla y flexible.
+
+
+Contenedor y Elementos del Grid:
+
+- Contenedor de Grid: Es el elemento que tiene la propiedad display: grid;. 
+Dentro de este contenedor, se colocan los elementos que se convertirán en las celdas del grid.
+
+- Elementos del Grid: Son los elementos hijos directos del contenedor de grid.
+
+
+Definiendo el Grid:
+
+- Para definir las filas y columnas del grid utilizando las propiedades grid-template-rows 
+y grid-template-columns.
+
+- También se puede usar grid-template-areas para crear un diseño basado en áreas nombradas.
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 100px;
+}
+
+En este ejemplo, el contenedor tiene dos columnas: la primera ocupa una fracción del espacio 
+disponible y la segunda el doble. Tiene dos filas: la primera ajusta su altura automáticamente 
+y la segunda tiene una altura fija de 100px.
+
+*/
+
+.grid {
+  background-color: #111111;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /*  grid-template-columns: 200px 200px 200px;*/
+  grid-template-rows: 80px auto 80px; /* en vez de utilizar px se pueden utilizar %  */
+}
+
+.grid > div {
+  background-color: darkcyan;
+  font-size: 36px;
+  padding: 5px;
+  margin: 2px;
+}
+
+/* 
+
+column-gap y row-gap:
+
+Establecen el espacio entre columnas y filas.
+
+*/
+
+.grid-gab {
+  background-color: #111111;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 80px auto 80px;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.grid-gab > div {
+  background-color: darkcyan;
+  font-size: 36px;
+  padding: 5px;
+}
+
+/* 
+
+justify-items:
+
+permite acomodar los elementos con respecto al ítem, el ítem se adaptará y se moverá con respecto al área 
+de la casilla donde se encuentra
+
+*/
+
+.grid-items {
+  background-color: #111111;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 80px auto 80px;
+  justify-items: start;
+}
+
+.grid-items > div {
+  background-color: darkcyan;
+  font-size: 36px;
+  padding: 5px;
+  margin: 10px;
+}
+
+/* 
+
+justify-content:
+
+permite acomodar los elementos con respecto al area del contenedor padre, el ítem se moverá 
+con respecto al área del contenedor padre
+
+*/
+
+.grid-content {
+  background-color: #111111;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 80px auto 80px;
+  justify-content: space-around;
+}
+
+.grid-content > div {
+  background-color: darkcyan;
+  font-size: 36px;
+  padding: 5px;
+  margin: 10px;
+}
+
+/* 
+
+otras funcinalidades 
+
+grid-area: Puedes nombrar áreas específicas del grid.
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar main'
+        'footer footer';
+}
+
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+
+
+Posicionamiento de los Elementos
+
+grid-column y grid-row: Controlan en qué columna y fila se coloca un elemento del grid
+
+.item1 {
+    grid-column: 1 / 3; ---> Se extiende desde la columna 1 hasta la 3 (sin incluir la 3) 
+    grid-row: 1 / 2; ---> Ocupa la primera fila 
+}
+
+*/
