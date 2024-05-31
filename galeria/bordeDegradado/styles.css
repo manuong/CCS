@@ -1,0 +1,35 @@
+body {
+  background-color: #222f3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.text-degradado {
+  font-family: sans-serif;
+  font-size: 34px;
+  background: linear-gradient(45deg, #2e86de, #1dd1a1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contenedor-text-degradado {
+  display: grid;
+  place-items: center;
+  background-color: #222f3e;
+  height: 300px;
+  width: 700px;
+  border-radius: 10px;
+}
+
+.borde-degradado {
+  background: linear-gradient(45deg, #2e86de, #1dd1a1);
+  height: 310px;
+  width: 710px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}

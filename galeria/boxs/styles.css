@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  background-color: black;
+}
+
+.caja-uno {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.caja-dos {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.caja-dos ~ div {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  position: absolute;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
