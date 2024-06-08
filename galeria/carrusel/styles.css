@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.carrusel {
+  display: flex;
+  overflow: scroll;
+  width: 100vw;
+}
+
+.carrusel div {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: green;
+  width: 400px;
+  height: 400px;
+}
+
+/* 
+
+
+cuando aplicas flex: 1 0 auto; a un ítem dentro de un contenedor flex, estás diciendo que el ítem:
+
+
+Puede crecer para llenar el espacio extra disponible (gracias a flex-grow: 1).
+
+No se encogerá si el contenedor se hace más pequeño (flex-shrink: 0).
+
+Tendrá una base de tamaño automático (flex-basis: auto), lo que significa que usará su tamaño intrínseco o el 
+tamaño definido por cualquier otra propiedad de CSS que lo afecte.
+
+
+Esta configuración es útil cuando quieres que tus ítems flexibles crezcan y utilicen el espacio adicional de 
+manera proporcional pero que no se encojan por debajo de su tamaño contenido.
+
+*/
